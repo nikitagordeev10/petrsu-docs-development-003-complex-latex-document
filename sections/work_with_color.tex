@@ -1,0 +1,51 @@
+\section[Работа с текстом]{
+\textcolor{white}{Работа с} \label{second}
+    \colorbox{ashgrey}{
+        \textcolor{red}{ц}
+        \textcolor{orange}{в}
+        \textcolor{yellow}{е}
+        \textcolor{green}{т}
+        \textcolor{blue}{о}
+        \textcolor{purple}{м}
+        }
+}
+% цвет страницы
+\pagecolor{mygreen}\afterpage{\nopagecolor}
+
+% цвет текста
+\textcolor{white}{This document presents several examples showing how to use the \texttt{xcolor} package to change the colour of \LaTeX{} page elements.}
+
+% цвет списка
+\begin{itemize}
+\color{green}
+\item First item
+\item Second item
+\color{orange}
+\item \textcolor{orange}{\colorbox{black}{Third item}}
+\item \textcolor{pink}{Fourth item}
+\end{itemize}
+
+% разделитель
+\noindent
+{\color{red} \rule{\linewidth}{0.5mm}}
+
+% цвет текста
+The background colour of text can also be \textcolor{red}{easily} set. For instance, you can change use an \colorbox{orange}{orange background} and then continue typing.
+
+% фон блока
+This is a sample text in black.
+\textcolor{blue}{This is a sample text in blue.}
+\textcolor{red}{This is a sample text in red.}
+\textcolor{yellow}{This is a sample text in yellow.}
+\textcolor{white}{\colorbox{orange}{This is a white sample text in orange colorbox.}}\\
+
+% фон таблицы
+\begin{tabular}{l | a | b | a | b}
+\hline
+\rowcolor{LightCyan}
+\mc{1}{}  & \mc{1}{x} & \mc{1}{y} & \mc{1}{w} & \mc{1}{z} \\
+\hline
+variable 1 & a & b & c & d \\
+variable 2 & a & b & c & d \\ \hline
+\end{tabular}
+\clearpage

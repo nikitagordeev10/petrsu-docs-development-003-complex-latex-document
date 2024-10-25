@@ -1,0 +1,146 @@
+% Подключение Библиотек
+% кирилица
+% ошибка -- \usepackage{ucs}
+% ошибка -- \usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+
+% изображения
+\usepackage{graphicx}
+\usepackage{capt-of} 
+\usepackage{adjustbox} 
+\usepackage{wrapfig}
+% языки
+
+% импорт
+\usepackage{import}
+\usepackage{example}
+\usepackage{makeidx}
+\usepackage{catchfilebetweentags}
+
+% поворот
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage{rotating}
+
+% текст 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{verbatim}
+\usepackage{lipsum}
+\immediate\write18{texcount -tex -sum  \jobname.tex > \jobname.wordcount.tex}
+% код
+\usepackage{listings}
+
+% математика
+\usepackage{unicode-math}
+\usepackage{letltxmacro}
+
+
+% url
+\usepackage{blindtext}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+
+% цвета
+\usepackage{pagecolor,lipsum}
+\usepackage{xcolor}
+\usepackage[table]{xcolor}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xcolor,colortbl}
+
+
+% Настройки Стиля
+
+% страницы
+\usepackage[left=20mm, right=10mm, top=20mm, bottom=20mm, nohead]{geometry}
+\renewcommand{\baselinestretch}{1.50}
+
+% ссылок
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+    
+\urlstyle{same}
+
+%% цвета
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{mygreen}{rgb}{0.135,0.42,0.32}
+\definecolor{anti-flashwhite}{rgb}{0.95, 0.95, 0.96}
+\definecolor{ashgrey}{rgb}{0.7, 0.75, 0.71}
+\definecolor{Gray}{gray}{0.85}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+
+% стиль кода с именем "mystyle1"
+\lstdefinestyle{mystyle1}{
+  backgroundcolor=\color{backcolour}, 
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+% стиль кода с именем "mystyle2"
+\lstdefinestyle{mystyle2}{
+  frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  backgroundcolor=\color{pink}, 
+  keywordstyle=\color{blue},
+  % commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+% стиль таблицы
+\newcommand{\mc}[2]{\multicolumn{#1}{c}{#2}}
+\newcolumntype{a}{>{\columncolor{Gray}}c}
+\newcolumntype{b}{>{\columncolor{white}}c}
+
+% Аннотация, Ключевые Слова И Ссылки
+\providecommand{\keywords}[1] {
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+\title{Лабораторная работа 1.2}
+\author{Гордеев Никита  \\
+        \small $^{1}$Петрозаводский государственный университет
+}
+\date{28 февраля 2023 г.} 
+
+%положение figure
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
